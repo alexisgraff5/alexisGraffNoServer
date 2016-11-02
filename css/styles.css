@@ -1,0 +1,14 @@
+body {
+  background-image: url('../img/main-bg.jpeg');
+  background-size: 100vw 100vh;
+}
+
+.planet-one {
+  margin-left: 10vh;
+  margin-top: 10vh;
+}
+
+
+.planet-name {
+  color: #ffffff;
+}
