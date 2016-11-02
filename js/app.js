@@ -1,1 +1,1 @@
-angular.module('readMore', []);
+angular.module('starWars', []);
