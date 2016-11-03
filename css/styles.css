@@ -8,6 +8,8 @@ body {
 .navigation {
   display: flex;
   justify-content: space-around;
+  margin: 2vh;
+  padding: 1vh;
 }
 
 .btn {
@@ -19,7 +21,7 @@ body {
 }
 
 .header {
-  font-size: 3em;
+  font-size: 3.75em;
   text-align: center;
   margin: 2vh;
   padding: 2vh;
