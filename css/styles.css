@@ -5,18 +5,42 @@ body {
   font-family: 'Audiowide', cursive;
 }
 
-.header {
-  font-size: 4em;
-  text-align: center;
-  margin: 3vh 2vh 3vh 2vh;
-  padding: 3vh;
+.navigation {
+  display: flex;
+  justify-content: space-around;
 }
 
-.planet-one {
+.btn {
+  background-color: #ffffff;
+  color: #000000;
+  margin: auto;
+  padding: 2vh;
+  border-radius: 75px
+}
+
+.header {
+  font-size: 3em;
+  text-align: center;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+.container1 {
   display: flex;
   align-items: center;
 }
 
+.planet-one {
+  margin-left: 4vh;
+  margin-top: 2vh;
+  padding: 1vh;
+}
+
+.planet-two {
+  margin-left: 4vh;
+  margin-top: 2vh;
+  padding: 1vh;
+}
 
 .planet-name {
   color: #ffffff;
