@@ -27,36 +27,27 @@ body {
   padding: 2vh;
 }
 
-.footer {
-  font-size: 1em;
-  text-align: center;
-  padding-right: 3vh;
-  padding-top: 2vh;
-  margin: auto;
-}
-
 .bottom {
   display: flex;
   justify-content: space-between;
 }
 
+.footer {
+  font-size: 1em;
+  padding-top: 2vh;
+  padding-right: 3vh;
+}
+
 .home {
-  padding-top: 1vh;
-  margin: auto;
 }
 
 .time {
-  padding-left: 3vh;
   font-size: 1em;
   padding-top: 2vh;
-  margin: auto;
+  padding-left: 3vh;
 }
 
 .btn-a{
   text-decoration: none;
   color: #000000;
-}
-
-.views {
-  height: 60vh;
 }

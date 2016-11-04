@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/views/about.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Days+One" rel="stylesheet">
     <title>starWars</title>
   </head>
   <body>
@@ -14,13 +16,9 @@
       <div class='header'>STAR WARS</div>
       <div class='btn'><a class="btn-a" ui-sref='people'>people</a></div>
     </div>
-    <hr>
-    <div class='views'>
 
     <ui-view></ui-view>
 
-    </div>
-    <hr>
     <div class="bottom" ng-controller='timeCtrl'>
       <div class='time'><show-time></show-time></div>
       <div class='home'><a ui-sref='home'><img src='img/home-btn.png' width='35px'></a></div>
