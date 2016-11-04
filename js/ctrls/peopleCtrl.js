@@ -14,9 +14,7 @@ angular.module('starWars').controller('peopleCtrl', function($scope, $stateParam
 
   $scope.getPeople = function() {
     mainService.getPeople($scope.currentPage).then(function(people){
-      $scope.worlds = people;
-      $scope.people = people[0];
-      // console.log($scope.worlds);
+      $scope.people = people;
       // console.log($scope.people);
     });
   };

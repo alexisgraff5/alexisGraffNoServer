@@ -1,13 +1,13 @@
 <h1>Planets in the Galaxy</h1>
 <button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
-  Page {{currentPage}}
+  <span class='page'>Page {{currentPage}}</span>
 <button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
-<div ng-repeat='planet in planets'>
-  {{planet.name}}
-  {{planet.rotation_period}}
-  {{planet.orbital_period}}
-  {{planet.population}}
-  {{planet.climate}}
-  {{planet.terrain}}
-  {{planet.surface_water}}
+<div ng-repeat='planet in planets' class='planet'>
+  <h2>{{planet.name}}</h2>
+  Hours in a Day: {{planet.rotation_period}}
+  Days in a Year: {{planet.orbital_period}}
+  Population: {{planet.population}}
+  Climate: {{planet.climate}}
+  Terrain: {{planet.terrain}}
+  Percent Water Surface Area: {{planet.surface_water}}
 </div>

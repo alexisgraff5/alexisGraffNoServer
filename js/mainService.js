@@ -26,18 +26,18 @@ angular.module('starWars').service('mainService', function($http, $q) {
             url: 'http://swapi.co/api/people/?page=' + pageNum
         }).then(function(response) {
             var people = response.data.results;
-            console.log(people);
+          //  console.log(people);
             for (let i = 0; i < people.length; i++) {
                 $http({
                     method: 'GET',
                     url: people[i].homeworld
                 }).then(function(response) {
                     var secondaryResponse = response.data.name;
-                    console.log(secondaryResponse);
+                  //  console.log(secondaryResponse);
                     people[i].homeWorldData = secondaryResponse;
                 });
             }
-            console.log(people);
+          //  console.log(people);
             defer.resolve(people);
         });
         return defer.promise;
