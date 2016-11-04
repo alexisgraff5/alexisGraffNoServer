@@ -4,10 +4,12 @@ angular.module('starWars', ['ui.router']).config(function ($stateProvider, $urlR
       templateUrl: "../views/about.html"
     }).state('planets',{
       url:'/planets',
-      templateUrl: 'views/planets.html'
+      templateUrl: 'views/planets.html',
+      controller: 'planetsCtrl'
     }).state('people',{
       url: '/people',
-      templateUrl: 'views/people.html'
+      templateUrl: 'views/people.html',
+      controller: 'peopleCtrl'
     });
     $urlRouterProvider.otherwise('/');
 });

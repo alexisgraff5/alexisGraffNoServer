@@ -1,0 +1,15 @@
+<h1>People of the Galaxy</h1>
+<button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
+  Page {{currentPage}}
+<button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
+<div ng-repeat='person in people'>
+  {{person.name}}
+  {{person.birth_year}}
+  {{person.gender}}
+  {{person.eye_color}}
+  {{person.hair_color}}
+  {{person.height}}
+  {{person.mass}}
+  {{person.skin_color}}
+  {{person.homeWorldData}}
+</div>

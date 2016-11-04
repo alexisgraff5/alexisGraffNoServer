@@ -1,0 +1,13 @@
+<h1>Planets in the Galaxy</h1>
+<button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
+  Page {{currentPage}}
+<button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
+<div ng-repeat='planet in planets'>
+  {{planet.name}}
+  {{planet.rotation_period}}
+  {{planet.orbital_period}}
+  {{planet.population}}
+  {{planet.climate}}
+  {{planet.terrain}}
+  {{planet.surface_water}}
+</div>
