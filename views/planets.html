@@ -1,8 +1,13 @@
-<h1>Planets in the Galaxy</h1>
-<button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
-  <span class='page'>Page {{currentPage}}</span>
-<button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
-<div ng-repeat='planet in planets' class='planet'>
+<div class='title'>
+  <h1 class='green'>Planets in the Galaxy</h1>
+  <div>
+    <button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
+    <span class='page green'>Page {{currentPage}}</span>
+    <button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
+  </div>
+</div>
+<div class='third'>
+<div ng-repeat='planet in planets' class='each'>
   <h2>{{planet.name}}</h2>
   Hours in a Day: {{planet.rotation_period}}
   Days in a Year: {{planet.orbital_period}}
@@ -10,4 +15,5 @@
   Climate: {{planet.climate}}
   Terrain: {{planet.terrain}}
   Percent Water Surface Area: {{planet.surface_water}}
+</div>
 </div>

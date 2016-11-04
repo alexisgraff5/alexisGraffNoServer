@@ -1,0 +1,43 @@
+.title {
+  margin: 7vh 0 5vh 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page {
+  font-family: 'Days One', sans-serif;
+}
+
+button {
+  font-family: 'Days One', sans-serif;
+}
+
+.each {
+  font-family: 'Days One', sans-serif;
+  padding: 5vh;
+  width: 30vw;
+  display: inline-block;
+  margin: 2.5vh auto;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: 'Audiowide', cursive;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Audiowide', cursive;
+}
+
+.yellow {
+  color: #F5F453;
+}
+
+.green {
+  color: #419A5A;
+}
+
+.third {
+  position: relative;
+}

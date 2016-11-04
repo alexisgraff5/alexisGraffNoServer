@@ -1,15 +1,19 @@
-<h1>People of the Galaxy</h1>
-<button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
-  <span class='page'>Page {{currentPage}}</span>
-<button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
-<div ng-repeat='person in people' class='person'>
+<div class='title'>
+  <h1 class='yellow'>People of the Galaxy</h1>
+  <div>
+      <button ng-click="prev()" ng-disabled="currentPage === 1">Previous</button>
+        <span class='page yellow'>Page {{currentPage}}</span>
+      <button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
+  </div>
+</div>
+<div ng-repeat='person in people' class='each'>
   <h2>{{person.name}}</h2>
-  Birth Year: {{person.birth_year}}
-  Gender: {{person.gender}}
-  Eye Color: {{person.eye_color}}
-  Hair Color: {{person.hair_color}}
-  Height (cm): {{person.height}}
-  Mass (kg): {{person.mass}}
-  Skin Color: {{person.skin_color}}
-  HomeWorld: {{person.homeWorldData}}
+  <div>Birth Year: {{person.birth_year}}</div>
+  <div>Gender: {{person.gender}}</div>
+  <div>Eye Color: {{person.eye_color}}</div>
+  <div>Hair Color: {{person.hair_color}}</div>
+  <div>Height (cm): {{person.height}}</div>
+  <div>Mass (kg): {{person.mass}}</div>
+  <div>Skin Color: {{person.skin_color}}</div>
+  <div>Homeworld: {{person.homeWorldData}}</div>
 </div>
