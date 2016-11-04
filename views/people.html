@@ -6,14 +6,16 @@
       <button ng-click="next()" ng-disabled="currentPage === maxPages">Next</button>
   </div>
 </div>
+<div class='third'>
 <div ng-repeat='person in people' class='each'>
   <h2>{{person.name}}</h2>
-  <div>Birth Year: {{person.birth_year}}</div>
-  <div>Gender: {{person.gender}}</div>
-  <div>Eye Color: {{person.eye_color}}</div>
-  <div>Hair Color: {{person.hair_color}}</div>
-  <div>Height (cm): {{person.height}}</div>
-  <div>Mass (kg): {{person.mass}}</div>
-  <div>Skin Color: {{person.skin_color}}</div>
-  <div>Homeworld: {{person.homeWorldData}}</div>
+  <span class='element'><span style='font-weight:700'>Birth Year:</span> {{person.birth_year}}</span>
+  <span class='element'><span style='font-weight:700'>Gender:</span> {{person.gender}}</span>
+  <span class='element'><span style='font-weight:700'>Eye Color:</span> {{person.eye_color}}</span>
+  <span class='element'><span style='font-weight:700'>Hair Color:</span> {{person.hair_color}}</span>
+  <span class='element'><span style='font-weight:700'>Skin Color:</span> {{person.skin_color}}</span>
+  <span class='element'><span style='font-weight:700'>Height:</span> {{person.height}}cm</span>
+  <span class='element'><span style='font-weight:700'>Mass:</span> {{person.mass}}kg</span>
+  <span class='element'><span style='font-weight:700'>Homeworld:</span> {{person.homeWorldData}}</span>
+</div>
 </div>

@@ -7,13 +7,13 @@
   </div>
 </div>
 <div class='third'>
-<div ng-repeat='planet in planets' class='each'>
+<div ng-repeat='planet in planets' class='each' ng-grid=''>
   <h2>{{planet.name}}</h2>
-  Hours in a Day: {{planet.rotation_period}}
-  Days in a Year: {{planet.orbital_period}}
-  Population: {{planet.population}}
-  Climate: {{planet.climate}}
-  Terrain: {{planet.terrain}}
-  Percent Water Surface Area: {{planet.surface_water}}
+  <span class='element'><span style='font-weight:700'>One Day:</span> {{planet.rotation_period}} hours</span>
+  <span class='element'><span style='font-weight:700'>One Year:</span> {{planet.orbital_period}} days</span>
+  <span class='element'><span style='font-weight:700'>Population:</span> {{planet.population}}</span>
+  <span class='element'><span style='font-weight:700'>Climate:</span> {{planet.climate}}</span>
+  <span class='element'><span style='font-weight:700'>Terrain:</span> {{planet.terrain}}</span>
+  <span class='element'><span style='font-weight:700'>Water Surface Area:</span> {{planet.surface_water}}%</span>
 </div>
 </div>

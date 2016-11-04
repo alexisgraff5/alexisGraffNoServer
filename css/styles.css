@@ -2,7 +2,7 @@ body {
   background-image: url('../img/main-bg.jpeg');
   background-size: cover;
   color: #ffffff;
-  font-family: 'Audiowide', cursive;
+  font-family: 'Days One', sans-serif;
 }
 
 .navigation {
@@ -30,7 +30,7 @@ body {
 .bottom {
   display: flex;
   justify-content: space-between;
-  margin: 3vh;
+  margin: 6vh 3vh 3vh 3vh;
 }
 
 .footer {
