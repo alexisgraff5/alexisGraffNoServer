@@ -28,10 +28,16 @@ angular.module('starWars').service('mainService', function($http, $q) {
             var people = response.data.results;
            console.log(people);
             for (let i = 0; i < people.length; i++) {
+              //console.log(people[i].homeworld.charAt(people[i].homeworld.length - 2))
+              var regex = /\d+/g;
+              var url = people[i].homeworld;
+              var planetNumber = url.match(regex);
+              //console.log(planetNumber);
+
                 $http({
                     method: 'GET',
-                    url: people[i].homeworld
-                    //url: 'https://swapi.co/api/planets/' + (i + 1)
+                    //url: people[i].homeworld
+                    url: 'https://swapi.co/api/planets/' + planetNumber
                 }).then(function(response) {
                     var secondaryResponse = response.data.name;
                   //  console.log(secondaryResponse);
