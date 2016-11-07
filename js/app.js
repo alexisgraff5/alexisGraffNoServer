@@ -1,7 +1,7 @@
 angular.module('starWars', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home',{
       url:'/',
-      templateUrl: "../views/about.html"
+      templateUrl: "views/about.html"
     }).state('planets',{
       url:'/planets',
       templateUrl: 'views/planets.html',
