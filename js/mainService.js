@@ -26,7 +26,7 @@ angular.module('starWars').service('mainService', function($http, $q) {
             url: 'https://swapi.co/api/people/?page=' + pageNum
         }).then(function(response) {
             var people = response.data.results;
-          //  console.log(people);
+           console.log(people);
             for (let i = 0; i < people.length; i++) {
                 $http({
                     method: 'GET',
