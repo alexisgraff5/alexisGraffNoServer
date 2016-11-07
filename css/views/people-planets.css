@@ -4,12 +4,6 @@
   justify-content: space-around;
 }
 
-.page {
-}
-
-button {
-}
-
 .each {
   font-family: 'News Cycle', sans-serif;
   padding: 1vh 3vh 1vh 3vh;
@@ -45,4 +39,9 @@ h2 {
   padding: 1vh;
   margin: 1vh;
   font-size: 1em;
+}
+
+.no-residents {
+  text-align: center;
+  color: #E55121;
 }
