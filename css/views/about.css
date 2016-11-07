@@ -28,3 +28,27 @@
 .yoda {
   padding: 1vh;
 }
+
+.planet-one {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 150vw;
+    width: 100%;
+  }
+}
+
+.planet-five {
+  animation-duration: 5s;
+  animation-name: easein;
+}
+
+@keyframes easein {
+  from {
+    margin-left: 150vw;
+    width: 100%;
+  }
+}
