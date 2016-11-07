@@ -30,8 +30,8 @@ angular.module('starWars').service('mainService', function($http, $q) {
             for (let i = 0; i < people.length; i++) {
                 $http({
                     method: 'GET',
-                    //url: people[i].homeworld
-                    url: 'https://swapi.co/api/planets/' + (i + 1)
+                    url: people[i].homeworld
+                    //url: 'https://swapi.co/api/planets/' + (i + 1)
                 }).then(function(response) {
                     var secondaryResponse = response.data.name;
                   //  console.log(secondaryResponse);
