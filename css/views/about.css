@@ -1,6 +1,30 @@
 .paragraph {
   font-family: 'Days One', sans-serif;
-  margin: 5vh;
-  padding: 2vh;
   text-align: center;
+}
+
+.top-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: 2vh 1vh;
+  padding: 4vh 1vh;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto 2vh;
+  padding: 2vh 2vh;
+}
+
+.middle-middle {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.yoda {
+  padding: 1vh;
 }
