@@ -3,7 +3,7 @@ angular.module('starWars').service('mainService', function($http, $q) {
     this.getPlanets = function(pageNum) {
         return $http({
             method: 'GET',
-            url: 'http://swapi.co/api/planets/?page=' + pageNum
+            url: 'https://swapi.co/api/planets/?page=' + pageNum
         }).then(function(response) {
             return response.data.results;
         });
@@ -23,7 +23,7 @@ angular.module('starWars').service('mainService', function($http, $q) {
         var myArr = [];
         $http({
             method: 'GET',
-            url: 'http://swapi.co/api/people/?page=' + pageNum
+            url: 'https://swapi.co/api/people/?page=' + pageNum
         }).then(function(response) {
             var people = response.data.results;
           //  console.log(people);
