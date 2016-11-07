@@ -13,11 +13,7 @@ body {
 }
 
 .btn {
-  background-color: #ffffff;
-  color: #000000;
   margin: auto;
-  padding: 2vh;
-  border-radius: 75px
 }
 
 .header {
@@ -50,6 +46,23 @@ body {
 }
 
 .btn-a{
-  text-decoration: none;
   color: #000000;
+  background-color: #ffffff;
+  border-radius: 75px;
+  padding: 2vh;
+}
+
+.btn-b{
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 75px;
+  padding: 2vh;
+}
+
+.btn-b:hover {
+  background-color: #419A5A;
+}
+
+.btn-a:hover {
+  background-color: #F5F453;
 }
