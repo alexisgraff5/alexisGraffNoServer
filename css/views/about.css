@@ -29,7 +29,7 @@
   padding: 1vh;
 }
 
-.planet-one {
+.slide {
   animation-duration: 5s;
   animation-name: slidein;
 }
@@ -41,14 +41,40 @@
   }
 }
 
-.planet-five {
-  animation-duration: 5s;
-  animation-name: easein;
+.up-down1 {
+  animation: MoveUpDown 3s linear infinite;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
 }
 
-@keyframes easein {
-  from {
-    margin-left: 150vw;
-    width: 100%;
+@keyframes MoveUpDown {
+  0 {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 70px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+.up-down2 {
+  animation: MoveUpDown 3s linear infinite;
+  position: absolute;
+  bottom: 50px;
+  right: 5px;
+}
+
+@keyframes MoveUpDown {
+  0 {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 75px;
+  }
+  100% {
+    bottom: 50px;
   }
 }
